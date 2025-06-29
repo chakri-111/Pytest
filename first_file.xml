@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="7" time="0.566" timestamp="2025-04-28T23:00:40.662455+05:30" hostname="LAPTOP-95QU74KE"><testcase classname="pytest_training.test_asserts" name="test_assert_greater" time="0.002" /><testcase classname="pytest_training.test_asserts" name="test_assert_equal" time="0.001"><failure message="AssertionError: a is less than b. So fail.&#10;assert False&#10; +  where False = &lt;method-wrapper '__eq__' of int object at 0x00007FF9F1B54AD8&gt;(20)&#10; +    where &lt;method-wrapper '__eq__' of int object at 0x00007FF9F1B54AD8&gt; = 10.__eq__">def test_assert_equal():
+        a=10
+        b=20
+&gt;       assert a.__eq__(b) ,("a is less than b. So fail.")
+E       AssertionError: a is less than b. So fail.
+E       assert False
+E        +  where False = &lt;method-wrapper '__eq__' of int object at 0x00007FF9F1B54AD8&gt;(20)
+E        +    where &lt;method-wrapper '__eq__' of int object at 0x00007FF9F1B54AD8&gt; = 10.__eq__
+
+pytest_training\test_asserts.py:10: AssertionError</failure></testcase><testcase classname="pytest_training.test_asserts" name="test_three" time="0.003"><failure message="AssertionError: a is not equals to b&#10;assert {'0', '1'} == {'0', '1', '2'}&#10;  &#10;  Extra items in the right set:&#10;  '2'&#10;  Use -v to get more diff">def test_three():
+        a=set("101")
+        b=set("102")
+&gt;       assert a==b,"a is not equals to b"  # it prints only failed method's comment and ignores the passed method's comment
+E       AssertionError: a is not equals to b
+E       assert {'0', '1'} == {'0', '1', '2'}
+E         
+E         Extra items in the right set:
+E         '2'
+E         Use -v to get more diff
+
+pytest_training\test_asserts.py:15: AssertionError</failure></testcase><testcase classname="pytest_training.test_flags" name="test_sample1" time="0.002" /><testcase classname="pytest_training.test_flags" name="test_sample2" time="0.002" /><testcase classname="pytest_training.test_training1" name="test_chakri" time="0.003" /><testcase classname="pytest_training.test_training1" name="test_two" time="0.002" /></testsuite></testsuites>
