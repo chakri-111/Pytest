@@ -20,7 +20,7 @@ def test_sample2():
 
                             # Markers
                             # pytest -rA -m smoke           to run markers having smoke only
-                            # pytest -rA -m, regression     to run markers having regression only
+                            # pytest -rA -m regression     to run markers having regression only
                             # pytest -rA -m "smoke or regression"     to run either smoke or regression
 
                             # custom markers
